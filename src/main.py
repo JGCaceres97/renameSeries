@@ -65,7 +65,7 @@ def normalize_path(pathStr: str) -> str:
 
 
 def get_title_from_filename(file_name: str) -> str:
-    return file_name.split(" - ")[1].split(".mkv")[0].strip()
+    return file_name.split(" - ")[1].strip()
 
 
 def get_folder_from_path(pathStr: str) -> str:
