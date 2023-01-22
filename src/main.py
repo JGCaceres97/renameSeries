@@ -34,7 +34,7 @@ def main():
         season = str(seasonInt)
 
     with scandir(dir) as files:
-        for file in files:
+        for file in sorted(files, key=lambda e: e.name):
             if file.is_dir():
                 continue
 
